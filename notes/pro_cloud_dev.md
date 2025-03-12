@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1741691662195
+updated: 1741777655740
 created: 1741345686998
 ---
 
@@ -134,6 +134,26 @@ Cloud API Gateway)
 
   -  Integrating applications using asynchronous or event-driven approaches (e.g.,
 Eventarc, Pub/Sub)
+    - ChatGPT response for [[pro_cloud_dev.asynch_event_driven]] approaches
+    - [Eventarc Documentation](https://cloud.google.com/eventarc/docs)
+      - Two types:
+        - [Eventarc Standard](https://cloud.google.com/eventarc/standard/docs/overview)
+          - Format
+            - HTTP requests in binary content mode
+            - Payload encoding
+              - `application/json`
+              - `application/protobuf`
+        - [Eventarc Advanced](https://cloud.google.com/eventarc/advanced/docs/overview)
+          - [Retry Policy](https://cloud.google.com/eventarc/advanced/docs/overview#event-retry-policy)
+            - Default 24 hours with exponential backoff
+          - Format 
+            - HTTP requests in binary content mode
+            - Workflow destinations converts event to JSON object
+        - [Features Comparison Chart](https://cloud.google.com/eventarc/docs#features-comparison-table)
+      - [Event Definition](https://cloud.google.com/eventarc/advanced/docs/overview#events):
+        - > An event is a data record that expresses an occurrence and its context, and indicates a change in a resource or environment. An event is a discrete unit of communication, independent of other events. For example, an event might indicate a change to data in a database, a file added to a storage system, or a scheduled job.
+      - Observability
+        - detailed logs available in Cloud Auditing Logs
   -  Optimizing for cost and resource usage
   -  Understanding data replication to support zonal and regional failover models
   -  Using traffic splitting strategies (e.g., gradual rollouts, rollbacks, A/B testing) on a
