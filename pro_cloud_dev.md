@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1741812689982
+updated: 1741870304543
 created: 1741345686998
 ---
 
@@ -103,7 +103,15 @@ content delivery
   - > Memorystore for Valkey and Redis Cluster scale without downtime to support up to 250 nodes, terabytes of keyspace, and 60x more throughput than Memorystore for Redis with microsecond latencies
   - > Memorystore for Valkey and Redis Cluster have zero-downtime scaling, automatically distributed replicas across availability zones, and automated failover. Memorystore for Redis Cluster also offers a 99.99% SLA
   - > Session management, frequently accessed queries, scripts, and pages are common examples of caching
+
 -  **Creating and deploying APIs (e.g., HTTP REST, gRPC [Google Remote Procedure Call])**
+    - [Bridge The Gap Between gRPC And REST HTTP APIs](https://cloud.google.com/blog/products/api-management/bridge-the-gap-between-grpc-and-rest-http-apis)
+      - efficient serialization
+      - low latency
+      - strong typed messages
+    - [gRPC Overview](https://cloud.google.com/api-gateway/docs/grpc-overview)
+      - > In gRPC, a client application can directly call methods on a server application on a different machine as if it was a local object
+     
 
 - **Using application rate limiting, authentication, and observability (e.g., Apigee,
 Cloud API Gateway)**
@@ -119,7 +127,7 @@ Cloud API Gateway)**
     - Ideal for cloud native apps using GCP services 
     - Inexpesive to get started. 
   - [Cloud Endpoints](https://cloud.google.com/endpoints/docs)
-    - Requires uses to manage every detail of API operations.
+    - Requires users to manage every detail of API operations.
     - Configure, deploy and manage [ESPv2 Proxy](https://cloud.google.com/endpoints/docs/openapi/glossary#extensible_service_proxy_v2)
     - Most common use case is with gRPC services.
     - 3 Options depending on where API is hosted:
@@ -127,8 +135,8 @@ Cloud API Gateway)**
       - gRPC 
       - App Engine standard enviornment
 
-- Integrating applications using asynchronous or event-driven approaches (e.g.,
-Eventarc, Pub/Sub)
+- **Integrating applications using asynchronous or event-driven approaches (e.g.,
+Eventarc, Pub/Sub)**
   - ChatGPT response for [[pro_cloud_dev.asynch_event_driven]] approaches
     - [Eventarc Documentation](https://cloud.google.com/eventarc/docs)
       - Two types:
@@ -149,16 +157,20 @@ Eventarc, Pub/Sub)
         - > An event is a data record that expresses an occurrence and its context, and indicates a change in a resource or environment. An event is a discrete unit of communication, independent of other events. For example, an event might indicate a change to data in a database, a file added to a storage system, or a scheduled job.
       - Observability
         - detailed logs available in Cloud Auditing Logs
-- Optimizing for cost and resource usage
-- Understanding data replication to support zonal and regional failover models
-- Using traffic splitting strategies (e.g., gradual rollouts, rollbacks, A/B testing) on a
-new service on Cloud Run or GKE
-- Orchestrating application services with Workflows, Eventarc, Cloud Tasks, and
-Cloud Scheduler
+
+- **Optimizing for cost and resource usage**
+  - [Well Architected Framework: Cost Optimization Pillar](https://cloud.google.com/architecture/framework/cost-optimization)
+
+- **Understanding data replication to support zonal and regional failover models**
+
+- **Using traffic splitting strategies (e.g., gradual rollouts, rollbacks, A/B testing) on a new service on Cloud Run or GKE**
+
+- **Orchestrating application services with Workflows, Eventarc, Cloud Tasks, and Cloud Scheduler**
 
 ### **1.2 Designing secure applications. Considerations include:**
-- Implementing data retention and organization policies (e.g., Cloud Storage
-Object Lifecycle Management, Cloud Storage use and lock retention policies)
+
+- **Implementing data retention and organization policies (e.g., Cloud Storage Object Lifecycle Management, Cloud Storage use and lock retention policies)**
+
 - Using security mechanisms that identify vulnerabilities and protect services and
 resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
 - Responding to and resolving vulnerabilities, including those identified by Artifact
