@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1742293229747
+updated: 1742315791026
 created: 1741345686998
 ---
 
@@ -159,10 +159,18 @@ content delivery
   - [Well Architected Framework: Cost Optimization Pillar](https://cloud.google.com/architecture/framework/cost-optimization)
 
 - **Understanding data replication to support zonal and regional failover models**
+  - References - [Distaster Recovery](https://cloud.google.com/architecture/disaster-recovery)
+  - Zonal Resources hosted in a single zone
+    - Zonal resources:
+      - Compute Engine (virtual machines)
+      - Persistent disks
+  - Regional Resources hosted in multi-zones in the same region
+  - Multi-regional hosted across multiple regions.
 
 - **Using traffic splitting strategies (e.g., gradual rollouts, rollbacks, A/B testing) on a new service on Cloud Run or GKE**
 
 - **Orchestrating application services with Workflows, Eventarc, Cloud Tasks, and Cloud Scheduler**
+  - Reference Dendron page: [[pro_cloud_dev.orchestrating_app_services]]
 
 ### **1.2 Designing secure applications. Considerations include:**
 
