@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1741870304543
+updated: 1742293229747
 created: 1741345686998
 ---
 
@@ -26,8 +26,7 @@ and deployment strategies, problem determination and resolution, and datastores.
 individual also has proficiency with at least one general-purpose programming language and
 can instrument their code to produce metrics, logs, and traces.
 
-## Section 1: Designing highly scalable, available, and reliable cloud-native
-applications (~36% of the exam)
+## Section 1: Designing highly scalable, available, and reliable cloud-native applications (~36% of the exam)
 
 ---
 
@@ -113,8 +112,7 @@ content delivery
       - > In gRPC, a client application can directly call methods on a server application on a different machine as if it was a local object
      
 
-- **Using application rate limiting, authentication, and observability (e.g., Apigee,
-Cloud API Gateway)**
+- **Using application rate limiting, authentication, and observability (e.g., Apigee, Cloud API Gateway)**
   - [Choosing Between Apigee API, Cloud API Gateway and Cloud Endpoints](https://cloud.google.com/blog/products/application-modernization/choosing-between-apigee-api-gateway-and-cloud-endpoints)
   - [Apigee](https://cloud.google.com/apigee)
     - Enterprise grade 
@@ -135,8 +133,7 @@ Cloud API Gateway)**
       - gRPC 
       - App Engine standard enviornment
 
-- **Integrating applications using asynchronous or event-driven approaches (e.g.,
-Eventarc, Pub/Sub)**
+- **Integrating applications using asynchronous or event-driven approaches (e.g., Eventarc, Pub/Sub)**
   - ChatGPT response for [[pro_cloud_dev.asynch_event_driven]] approaches
     - [Eventarc Documentation](https://cloud.google.com/eventarc/docs)
       - Two types:
@@ -170,6 +167,22 @@ Eventarc, Pub/Sub)**
 ### **1.2 Designing secure applications. Considerations include:**
 
 - **Implementing data retention and organization policies (e.g., Cloud Storage Object Lifecycle Management, Cloud Storage use and lock retention policies)**
+  - [Object Lifecycle Management](https://cloud.google.com/storage/docs/lifecycle)
+    - Lifecycle config
+      - a rule contains one action and multiple conditions
+      - if multiple rules contain same action, action is applied if any of the conditions are met.
+      - if multiple rules have conditions met at same time, then the order is:
+        - `delete` takes precedence over `SetStorageClass` action
+        - The lowest price of "at rest storage" pricing is used.
+    - Lifecycle Actions
+      - rule can contain only a single action
+      - `Delete`
+        - default is soft delete which GCP will retain for 7 days
+      - `SetStorageClass`
+      - `AbortIncompleteMultipartUpload`
+    - [Lifecycle Conditions](https://cloud.google.com/storage/docs/lifecycle#conditions)
+      - All conditions are optional but at least one condition is required.
+    - > The object's time spent set at the original storage class counts towards any minimum storage duration that applies for the new storage class.
 
 - Using security mechanisms that identify vulnerabilities and protect services and
 resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
