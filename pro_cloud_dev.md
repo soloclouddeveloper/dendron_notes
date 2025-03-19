@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1742315791026
+updated: 1742384167934
 created: 1741345686998
 ---
 
@@ -18,13 +18,7 @@ observability tasks.
 
 Certification exam guide (effective March 12, 2025)
 
-A Professional Cloud Developer builds and deploys scalable, secure, and highly available
-applications by using Google-recommended tools and best practices. This individual has
-experience with cloud-native applications, Google Cloud APIs, developer and AI tools,
-managed services, orchestration tools, serverless platforms, containerized applications, test
-and deployment strategies, problem determination and resolution, and datastores. This
-individual also has proficiency with at least one general-purpose programming language and
-can instrument their code to produce metrics, logs, and traces.
+A Professional Cloud Developer builds and deploys scalable, secure, and highly available applications by using Google-recommended tools and best practices. This individual has experience with cloud-native applications, Google Cloud APIs, developer and AI tools, managed services, orchestration tools, serverless platforms, containerized applications, test and deployment strategies, problem determination and resolution, and datastores. This individual also has proficiency with at least one general-purpose programming language and can instrument their code to produce metrics, logs, and traces.
 
 ## Section 1: Designing highly scalable, available, and reliable cloud-native applications (~36% of the exam)
 
@@ -32,16 +26,12 @@ can instrument their code to produce metrics, logs, and traces.
 
 ### **1.1 Designing high-performing applications and APIs. Considerations include:**
 
-- Choosing the appropriate platform based on the use case and requirements
-(e.g., Compute Engine, GKE, Cloud Run)
+- Choosing the appropriate platform based on the use case and requirements (e.g., Compute Engine, GKE, Cloud Run)
 
-- Building, refactoring, and deploying application containers to Cloud Run and
-GKE
-- Understanding how Google Cloud services are geographically distributed (e.g.,
-latency, regional services, zonal services)
+- Building, refactoring, and deploying application containers to Cloud Run and GKE
+- Understanding how Google Cloud services are geographically distributed (e.g., latency, regional services, zonal services)
 
-- Configuring load balancers and applications for session affinity and performant
-content delivery
+- Configuring load balancers and applications for session affinity and performant content delivery
   - [Session Affinity](https://cloud.google.com/load-balancing/docs/backend-service#session_affinity)
     - > Session affinity lets you control how the load balancer selects backends for new connections in a predictable way as long as the number of healthy backends remains constant.
     - Useful for stateful applications that require the same backend for the same user.
@@ -192,30 +182,23 @@ content delivery
       - All conditions are optional but at least one condition is required.
     - > The object's time spent set at the original storage class counts towards any minimum storage duration that applies for the new storage class.
 
-- Using security mechanisms that identify vulnerabilities and protect services and
-resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
-- Responding to and resolving vulnerabilities, including those identified by Artifact
-Analysis and Security Command Center
-- Storing, accessing, and rotating application secrets, credentials, and encryption
-keys (e.g., Secret Manager, Cloud Key Management Service, Workload Identity
-Federation)
-- Authenticating to Google Cloud services (e.g., Application Default Credentials,
-JSON Web Token [JWT], OAuth 2.0, Cloud SQL Auth Proxy, AlloyDB Auth Proxy)
+- Using security mechanisms that identify vulnerabilities and protect services and resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
+- Responding to and resolving vulnerabilities, including those identified by Artifact Analysis and Security Command Center
+- Storing, accessing, and rotating application secrets, credentials, and encryption keys (e.g., Secret Manager, Cloud Key Management Service, Workload Identity Federation)
+- Authenticating to Google Cloud services (e.g., Application Default Credentials, JSON Web Token [JWT], OAuth 2.0, Cloud SQL Auth Proxy, AlloyDB Auth Proxy)
 - Managing and authenticating end-user accounts (e.g., Identity Platform)
-- Securing cloud resources using Identity and Access Management (IAM) roles for
-service accounts
-- Securing service-to-service communications (e.g., Cloud Service Mesh,
-Kubernetes Network Policies)
+- Securing cloud resources using Identity and Access Management (IAM) roles for service accounts
+- Securing service-to-service communications (e.g., Cloud Service Mesh, Kubernetes Network Policies)
 - Running services with least privileged access
 - Securing application artifacts using Binary Authorization
 
 ### **1.3 Storing and accessing data. Considerations include:**
-  -  Selecting the appropriate storage system based on the volume of data and
-performance requirements
-  -  Designing appropriate schemas for structured databases (e.g., AlloyDB,
-Spanner) and unstructured databases (e.g., Bigtable, Datastore)
-  -  Understanding the implications of eventual and strongly consistent replication of
-AlloyDB, Bigtable, Cloud SQL, Spanner, and Cloud Storage
+  -  Selecting the appropriate storage system based on the volume of data and performance requirements
+      - Cloud Storage
+        - Infinite scale, unlimited amount of objects
+        - Max Object size = 5 TB
+  -  Designing appropriate schemas for structured databases (e.g., AlloyDB, Spanner) and unstructured databases (e.g., Bigtable, Datastore)
+  -  Understanding the implications of eventual and strongly consistent replication of AlloyDB, Bigtable, Cloud SQL, Spanner, and Cloud Storage
   -  Creating signed URLs to grant access to Cloud Storage objects
   -  Writing data to BigQuery for analytics and AI/ML workloads
   
@@ -224,8 +207,7 @@ AlloyDB, Bigtable, Cloud SQL, Spanner, and Cloud Storage
 ## Section 2: Building and testing applications (~23% of the exam)
 
 ### **2.1 Setting up your development environment. Considerations include:**
-  -  Emulating Google Cloud services using the Google Cloud CLI for local
-application development and local unit testing
+  -  Emulating Google Cloud services using the Google Cloud CLI for local application development and local unit testing
     - [Ref Google Official Doc](https://cloud.google.com/sdk/gcloud/reference/beta/emulators)
     - `glcoud beta emulators GROUP`
         - Possible GROUP:
@@ -238,13 +220,11 @@ application development and local unit testing
         - App must be built using Cloud Client Libraries
         - **DOES NOT** support `gcloud pubsub` 
             - What about bigtable, datastore, etc??
-  -  Using the Google Cloud console, Cloud SDK, Cloud Code, Gemini Cloud Assist,
-Gemini Code Assist, Cloud Shell, and Cloud Workstations
+  -  Using the Google Cloud console, Cloud SDK, Cloud Code, Gemini Cloud Assist, Gemini Code Assist, Cloud Shell, and Cloud Workstations
 
 ### **2.2 Building. Considerations include:**
 
-  -  Using Cloud Build and Artifact Registry to build and store containers from source
-code
+  -  Using Cloud Build and Artifact Registry to build and store containers from source code
   -  Configuring provenance in Cloud Build (e.g., Binary Authorization)
 
 ### **2.3 Testing. Considerations include:**
@@ -260,8 +240,7 @@ code
   -  Invoking Cloud Run services using triggers (e.g., Eventarc, Pub/Sub)
   -  Configuring event receivers (e.g., Eventarc, Pub/Sub)
   -  Exposing and securing APIs in applications (e.g., Apigee)
-  -  Deploying a new API version in Cloud Endpoints considering backward
-compatibility
+  -  Deploying a new API version in Cloud Endpoints considering backward compatibility
 
 ### **3.2 Deploying containers to GKE. Considerations include:**
   -  Deploying containerized applications
@@ -289,8 +268,7 @@ compatibility
 ## Section 4: Integrating applications with Google Cloud services (~21% of the exam)
 
 ### **4.1 Integrating applications with data and storage services. Considerations include:**
-  -  Managing connections to various Google Cloud datastores (e.g., Cloud SQL,
-Firestore, Cloud Storage)
+  -  Managing connections to various Google Cloud datastores (e.g., Cloud SQL, Firestore, Cloud Storage)
   -  Reading and writing data to and from various Google Cloud datastores
   -  Writing applications that publish and consume data using Pub/Sub
 
@@ -312,4 +290,3 @@ in Google Cloud Observability
   -  Managing application issues using Error Reporting
   -  Using trace IDs to correlate trace spans across services
   -  Using Gemini Cloud Assist
-8
