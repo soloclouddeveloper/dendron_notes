@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1742384167934
+updated: 1742476508325
 created: 1741345686998
 ---
 
@@ -26,12 +26,13 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
 
 ### **1.1 Designing high-performing applications and APIs. Considerations include:**
 
-- Choosing the appropriate platform based on the use case and requirements (e.g., Compute Engine, GKE, Cloud Run)
+- **Choosing the appropriate platform based on the use case and requirements (e.g., Compute Engine, GKE, Cloud Run)**
 
-- Building, refactoring, and deploying application containers to Cloud Run and GKE
-- Understanding how Google Cloud services are geographically distributed (e.g., latency, regional services, zonal services)
+- **Building, refactoring, and deploying application containers to Cloud Run and GKE**
 
-- Configuring load balancers and applications for session affinity and performant content delivery
+- **Understanding how Google Cloud services are geographically distributed (e.g., latency, regional services, zonal services)**
+
+- **Configuring load balancers and applications for session affinity and performant content delivery**
   - [Session Affinity](https://cloud.google.com/load-balancing/docs/backend-service#session_affinity)
     - > Session affinity lets you control how the load balancer selects backends for new connections in a predictable way as long as the number of healthy backends remains constant.
     - Useful for stateful applications that require the same backend for the same user.
@@ -184,10 +185,24 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
 
 - Using security mechanisms that identify vulnerabilities and protect services and resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
 - Responding to and resolving vulnerabilities, including those identified by Artifact Analysis and Security Command Center
+
 - Storing, accessing, and rotating application secrets, credentials, and encryption keys (e.g., Secret Manager, Cloud Key Management Service, Workload Identity Federation)
-- Authenticating to Google Cloud services (e.g., Application Default Credentials, JSON Web Token [JWT], OAuth 2.0, Cloud SQL Auth Proxy, AlloyDB Auth Proxy)
-- Managing and authenticating end-user accounts (e.g., Identity Platform)
+
+- **Authenticating to Google Cloud services (e.g., Application Default Credentials, JSON Web Token [JWT], OAuth 2.0, Cloud SQL Auth Proxy, AlloyDB Auth Proxy)**
+
+  - ChatGPT answer: [[pro_cloud_dev.authenticating_gcp_services]]
+
+  - [JWT for Service Accounts: (Google Devlopers Site)](https://developers.google.com/identity/protocols/oauth2#serviceaccount)
+
+    - > A service account's credentials, which you obtain from the Google API Console, include a generated email address that is unique, a client ID, and at least one public/private key pair. You use the client ID and one private key to create a signed JWT and construct an access-token request in the appropriate format. Your application then sends the token request to the Google OAuth 2.0 Authorization Server, which returns an access token. The application uses the token to access a Google API. When the token expires, the application repeats the process.
+
+  - [Using OAuth2.0 for Server To Server Apps: (Google Developers Site)](https://developers.google.com/identity/protocols/oauth2/service-account)
+
+
+- **Managing and authenticating end-user accounts (e.g., Identity Platform)**
+
 - Securing cloud resources using Identity and Access Management (IAM) roles for service accounts
+
 - Securing service-to-service communications (e.g., Cloud Service Mesh, Kubernetes Network Policies)
 - Running services with least privileged access
 - Securing application artifacts using Binary Authorization
