@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1742476508325
+updated: 1743161389463
 created: 1741345686998
 ---
 
@@ -244,7 +244,12 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
 
 ### **2.3 Testing. Considerations include:**
   -  Writing unit tests with the help of Gemini Code Assist
+    - [[ChatGPT response unit tests with Gemini Code Assist|pro_cloud_dev.write_unit_tests_with_gemini_code_assist]]
   -  Executing automated integration tests in Cloud Build
+
+  - General Resources (non-GCP non-PCD specific)
+    - [[pro_cloud_dev.unit_test_app_against_db]]
+    - [Dan Vega YT Spring and Testcontainers](https://www.youtube.com/watch?v=erp-7MCK5BU)
 
 ---
 
