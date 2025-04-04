@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1743161389463
+updated: 1743763905220
 created: 1741345686998
 ---
 
@@ -42,11 +42,11 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
       - weights
     - Best used when large distibution of unique connections    
     - By default, GCP LBs determine BE based on 5 parameters
-    - Packet's source IP 
-    - Packet's source port (if in packet header)
-    - Packet's desitnation IP 
-    - Packet's destination port (if in packet header)
-    - Packet's protocol
+      - Packet's source IP 
+      - Packet's source port (if in packet header)
+      - Packet's desitnation IP 
+      - Packet's destination port (if in packet header)
+      - Packet's protocol
   
     - **Types of affinity**
       - Client IP, no destination affinity
