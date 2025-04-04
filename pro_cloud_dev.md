@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1743763905220
+updated: 1743764073531
 created: 1741345686998
 ---
 
@@ -159,9 +159,10 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
   - Multi-regional hosted across multiple regions.
 
 - **Using traffic splitting strategies (e.g., gradual rollouts, rollbacks, A/B testing) on a new service on Cloud Run or GKE**
+  - GCP Doc Reference: [Rollbacks, gradual rollouts, and traffic migration](https://cloud.google.com/run/docs/rollouts-rollbacks-traffic-migration)
 
 - **Orchestrating application services with Workflows, Eventarc, Cloud Tasks, and Cloud Scheduler**
-  - Reference Dendron page: [[pro_cloud_dev.orchestrating_app_services]]
+  - Reference Dendron page: [[Orchestrating App Services|pro_cloud_dev.orchestrating_app_services]]
 
 ### **1.2 Designing secure applications. Considerations include:**
 
