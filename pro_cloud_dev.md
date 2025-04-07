@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1743764073531
+updated: 1744026239993
 created: 1741345686998
 ---
 
@@ -202,7 +202,11 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
 
 - **Managing and authenticating end-user accounts (e.g., Identity Platform)**
 
-- Securing cloud resources using Identity and Access Management (IAM) roles for service accounts
+- **Securing cloud resources using Identity and Access Management (IAM) roles for service accounts**
+     - [Manage Access To Service Accounts : Google Docs](https://cloud.google.com/iam/docs/manage-access-service-accounts)
+
+        - > access is managed through allow policies
+        - > bindings grant the specified roles to the principals, both on the resource that the allow policy is attached to and on all of that **resource's descendants** (emphasis mine)
 
 - Securing service-to-service communications (e.g., Cloud Service Mesh, Kubernetes Network Policies)
 - Running services with least privileged access
