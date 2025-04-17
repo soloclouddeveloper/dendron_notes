@@ -2,7 +2,7 @@
 id: ud14zad5nf0htgw1opsfedz
 title: Professional Cloud Developer
 desc: ''
-updated: 1744026239993
+updated: 1744890337156
 created: 1741345686998
 ---
 
@@ -184,7 +184,17 @@ A Professional Cloud Developer builds and deploys scalable, secure, and highly a
       - All conditions are optional but at least one condition is required.
     - > The object's time spent set at the original storage class counts towards any minimum storage duration that applies for the new storage class.
 
-- Using security mechanisms that identify vulnerabilities and protect services and resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)
+- **Using security mechanisms that identify vulnerabilities and protect services and resources (e.g., Identity-Aware Proxy [IAP], Web Security Scanner)**
+    - [IAP Key Features (GCP Docs)](https://cloud.google.com/security/products/iap#key-features)
+      - > Centralized Access Control
+      - > Works with cloud and on-prem apps
+      - > Protects apps and VMs
+    - [IAP Overview (GCP Docs)](https://cloud.google.com/iap/docs/concepts-overview)
+      - > IAP lets you establish a central authorization layer for applications accessed by HTTPS, so you can use an application-level access control model instead of relying on network-level firewalls
+      - > IAP works with [signed headers](https://cloud.google.com/iap/docs/signed-headers-howto)
+  
+      - Compute VM health checks do not use signed headers
+      - 
 - Responding to and resolving vulnerabilities, including those identified by Artifact Analysis and Security Command Center
 
 - Storing, accessing, and rotating application secrets, credentials, and encryption keys (e.g., Secret Manager, Cloud Key Management Service, Workload Identity Federation)
